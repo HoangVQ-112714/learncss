@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear {
+    clear : both;
+}
+
+/* menu */
+
+#header{
+    background-color: black;
+    height: 46.5px;
+    display: block;
+}
+
+#header .ti-search{
+    color: white;
+    float : right;
+    padding: 15px 24px 17px 24px;
+    font-weight: 700;
+    font-size: 15px;
+}    
+
+#header .ti-search:hover{
+    background-color: red;
+}
+
+#header .ti-angle-down{
+    font-weight: 500;
+    font-size: 13px;
+}
+#header .menu li{
+    display: inline-block;
+    padding: 12px 24px 12px 24px;
+    height: 46.5px;
+}
+
+#header .menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    height: 46.5px;
+    font-size: 15px;
+}
+
+#header .menu li:hover {
+    background-color: #ccc;
+}
+
+#header .menu li:hover a{
+    color: black;
+}
+
+/* navmenu */
+#header .navmenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top : 46.5px;
+}
+ #header .more{
+    position: relative;
+ }
+#header .more:hover .navmenu{
+    display: block;
+    box-shadow: 0 0 5px;
+}
+
+#header .navmenu li { 
+    width: 100%;
+}
+
+/* slider */
+#slider{
+    background-image: url(../pic/ny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:   relative;
+    z-index: 0;
+    position: top center;
+    width: 100%;
+    padding-top : 50%;   
+}
+
+#slider .block-slider {
+    padding: 32px 16px 32px 16px;
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translate(-50%);
+    bottom: 0;
+
+}
+
+#slider .block-slider h3{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    margin: 15px;
+}
+
+/* #content */
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 64px 16px;
+}
+
+#content .section-heading{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .text{
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+#content .member-list{
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .member-item {
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    border-radius: 4px;
+    width: 154px;
+}
+
+/* #Tour */
+
+.tour-section{
+    background-color: #000;
+    color: #fff;
+}
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+    color: #757575;
+}
+
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px 3px 4px;
+    margin-left: 16px;
+}
+
+
+.ticket-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* place */
+.place-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 32px;
+}
+
+.place-item{
+    float: left;
+    width: 33.33333%;
+    color: #000;
+    padding: 0 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-text{
+    margin-top: 15px;
+
+}
+
+.place-buy-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover{
+    color: #fff;
+    background-color: #ccc;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open{
+    /* display: flex; */
+}
+
+.modal-container{
+    background: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+}
+
+.modal-header{
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal .header{
+    margin: 16px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.modal #buy-tickets{
+    background: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+}
+.modal #buy-tickets:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: #2196F3 ;
+}

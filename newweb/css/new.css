@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Menu*/
+#header {
+    background-color: black;
+    height: 46.5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#header .ti-search {
+    color: white;
+    font-size: 14px;
+    padding: 15.75px 24px 15.75px 24px;
+    font-weight: 700;
+    float: right;
+    height: 46.5px;
+
+}
+
+#header .ti-search:hover {
+    background-color: red;
+}
+
+#header .ti-angle-down {
+    font-size: 12px;
+}
+
+#header .menu li {
+    display: inline-block;
+    padding: 12px 24px 12px 24px;
+    height: 46.5px;
+}
+
+#header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+#header .menu li:hover {
+    background-color: #ccc;
+    padding: 12px 24px 12px 24px;
+}
+
+#header .menu li:hover a {
+    color: black;
+}
+
+/*navmenu */
+
+#header .navmenu {
+    display: none;
+}
+
+#header .menu li:hover .navmenu {
+    display: block;
+}
+
+#header .more {
+    position: relative;
+}
+
+#header .more .navmenu:hover {
+    box-shadow: 0 0 10px;
+}
+
+#header .navmenu {
+    position: absolute;
+    left: 0;
+    top: 46.5px;
+}
+
+#header .navmenu li {
+    display: block;
+}
+
+
+/*slider*/
+
+#slider {
+    z-index: 0;
+    /* margin-top: 46px; */
+    padding-top: 50%;
+    /* background-color: aqua; */
+    background-image: url(../image/ny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    position: relative;
+}
+
+#slider .block-slider {
+    padding: 32px 16px 32px 16px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    bottom: 0;
+    position: absolute;
+}
+
+#slider .block-slider h3 {
+    font-size: 24px;
+    margin: 15px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+}
+
+#slider .block-slider p {
+    font-size: 16px;
+    margin: 15px;
+}
