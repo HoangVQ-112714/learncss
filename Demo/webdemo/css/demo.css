@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#header {
+    height: 70px;
+    background-color: white;
+    position: relative;
+
+
+}
+
+#header .heading {
+    width: 50%;
+    height: 70px;
+    padding: 10px;
+    font-size: 26px;
+    display: inline-block;
+    position: relative;
+    
+}
+
+#header .heading a {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 10px;
+    top: 10px;
+    font-family: sans-serif;
+    color: #000;
+    display: block;
+    right: 200px;
+}
+
+#header .heading a:hover {
+    cursor: pointer;
+    font-size: 28px;
+
+}
+
+#header .menu {
+    width: 50%;
+    float: right;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+
+}
+
+#header .menu li {
+    display: inline-block;
+    font-size: 20px;
+
+    bottom: 10px;
+
+}
+
+#header .list {
+    height: 45px;
+    position: absolute;
+    bottom: 10px;
+    padding: 12px 24px;
+    top: 10px;
+    right: 0;
+}
+
+#header .list li a {
+    text-decoration: none;
+    padding: 12px 24px;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+#header .list li a:hover {
+    color: #707070;
+}
+
+/* img */
+
+#image {
+    background-color: #ccc;
+    /* display: block; */
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+}
+
+#image .pic {
+    display: flex;
+    width: 100%;
+}
+
+#image .pic img {
+    width: 100%;
+    display: flex;
+
+}
+
+/* icon */
+
+#icon {
+    height: 60px;
+    /* background-color: red; */
+    position: relative;
+    padding: 10px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#icon .list-icon {
+    height: 40px;
+    margin-top: 5px;
+}
+
+#icon .list-icon li {
+    list-style: none;
+    position: relative;
+    
+}
+
+#icon .list-icon li i {
+    color: black;
+    padding: 10px;
+    float: right;
+    background-color: #fff;
+    /* text-align: right; */
+    margin: 5px;
+    font-weight: 500;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#icon .list-icon li .ti-archive:hover{
+    background-color: #fcb900 ;
+}
+#icon .list-icon li .ti-facebook:hover{
+    background-color:#007aff ;
+}
+#icon .list-icon li .ti-instagram:hover{
+    background-color: #9b51e0;
+}
+#icon .list-icon li .ti-email:hover{
+    background-color: #6EC1E4;
+}
+#icon .list-icon li .ti-youtube:hover{
+    background-color: #cf2e2e;
+}
+
+.content-box{
+    width: 100%;
+    display: flex;
+    
+}
+
+.content-box .content {
+    width: 1140px;
+    display: flex;
+    /* margin-right: 191.067px; */
+    margin-left: 191.067px;
+    display: flex;
+    
+}
+
+.content-box .content .image{
+    width: 40%;
+    height: 322px;
+    display: flex;
+}
+
+.content-box .content .image img{
+    /* width: 70%; */
+    padding: 10px;
+    margin-left: auto;
+    /* margin-right: 0; */
+}
+
+.content-box .content .text{
+    width: calc(100% -275px);
+    /* margin-right: auto; */
+
+}
+.content-box .content .text .heading {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.content-box .content .text .text1{
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+.content-box .content .text .text2{
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+
+.content-box .content .text .text2 .link{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-top-color: #dd9933;
+    border-right-color: #dd9933;
+    border-left-color: #dd9933;
+    border-bottom: 1px solid #dd9933;
+    text-decoration: none ;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 1px;
+    color: #000000;
+    font-weight: bold;
+}
+.content-box .content .text .text3{
+    margin-bottom: 16px;
+    font-size: 13px;
+}
+
+.content-box .content .text .text3 .link{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-top-color: #dd9933;
+    border-right-color: #dd9933;
+    border-left-color: #dd9933;
+    border-bottom: 1px solid #dd9933;
+    text-decoration: none ;
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 1px;
+    color: #000000;
+    font-weight: bold;
+}
